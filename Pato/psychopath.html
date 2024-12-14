@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychopath</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .base {
+            width: 300px;
+            height: 350px;
+            background-color: yellow;
+            position: relative;
+            border: 5px solid black;
+            border-radius: 40% 45% 30% 30%;
+        }
+
+        .eye_left {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 100%;
+            position: absolute;
+            top: 26%;
+            left: 25%;
+        }
+
+        .eye_right {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 100%;
+            position: absolute;
+            top: 26%;
+            right: 25%;
+        }
+
+        .duckbill {
+            width: 110px;
+            height: 40px;
+            background-color: orange;
+            border: 5px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 35%;
+            left: 38%;
+        }
+
+        .arm_left {
+            width: 25%;
+            height: 30%;
+            background-color: yellow;
+            border: 5px solid black;
+            border-top: transparent;
+            border-radius: 100% 0% 20% 100%;
+            position: absolute;
+            top: 50%;
+            left: -12%;
+        }
+
+        .arm_right {
+            width: 25%;
+            height: 30%;
+            background-color: yellow;
+            border: 5px solid black;
+            border-top: transparent;
+            border-radius: 50% 50% 100% 40%;
+            position: absolute;
+            top: 50%;
+            right: -12%;
+            rotate: z -35deg;
+            z-index: -1;
+
+        }
+        .knife{
+            width: 40%;
+            height: 10%;
+            background-color: cadetblue;
+            border: 5px solid black;
+            border-radius: 0 10% 80% 0%;
+            position: absolute;
+            top: 70%;
+            left: 20%;
+        }
+        .knife_handle{
+            width: 13%;
+            height: 65%;
+            background-color: red;
+            position: absolute;
+            left: -15%;
+            bottom: 48%;
+
+        }
+        .foot_left{
+            width: 20%;
+            height: 10%;
+            background-color: orange;
+            border: 5px solid black;
+            border-radius: 0 0 50% 50%;
+            position: absolute;
+            bottom: -8%;
+            right: 20%;
+            z-index: -1;
+        }
+        .foot_right{
+            width: 20%;
+            height: 10%;
+            background-color: orange;
+            border: 5px solid black;
+            border-radius: 0 0 50% 50%;
+            position: absolute;
+            bottom: -8%;
+            left: 20%;
+            z-index: -1;
+        }
+
+    </style>
+
+</head>
+
+<body class="container">
+    <main class="base">
+        <div class="eye_left"></div>
+        <div class="eye_right"></div>
+
+        <div class="duckbill"></div>
+
+        <div class="arm_left"></div>
+        <div class="arm_right"></div>
+
+        <div class="knife">
+            <div class="knife_handle"></div>
+        </div>
+
+        <div class="foot_left"></div>
+        <div class="foot_right"></div>
+    </main>
+</body>
+
+</html>
